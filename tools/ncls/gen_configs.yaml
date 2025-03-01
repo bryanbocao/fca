@@ -1,0 +1,77 @@
+datasets:
+  - imagenet:
+      ncls: 1000
+  # - caltech100:
+  #     ncls: 100
+  - caltech101:
+      ncls: 101
+  - caltech256:
+      ncls: 257
+  - cifar100:
+      ncls: 100
+  - cub200:
+      ncls: 200
+  # - flowers102:
+  #     ncls: 102
+  - food101:
+      ncls: 101
+  - gtsrb43:
+      ncls: 43
+  - indoor67:
+      ncls: 67
+  # - places201:
+  #     ncls: 201
+  # - places205:
+  #     ncls: 205
+  - quickdraw345:
+      ncls: 345
+  # - sun397:
+  #     ncls: 397
+  - textures47:
+      ncls: 47
+
+arch:
+  resnet:
+    path: ./configs/resnet
+    model:
+      - resnet18_8xb32_in1k
+      - resnet34_8xb32_in1k
+      - resnet50_8xb32_in1k
+      - resnet101_8xb32_in1k
+      - resnet152_8xb32_in1k
+  vgg:
+    path: ./configs/vgg
+    model:
+      - vgg16_8xb32_in1k
+  convnext_v2:
+    path: ./configs/convnext_v2
+    model:
+      - convnext-v2-base_32xb32_in1k
+  inception_v3:
+    path: ./configs/inception_v3
+    model:
+      - inception-v3_8xb32_in1k
+  efficientnet_v2:
+    path: ./configs/efficientnet_v2
+    model:
+      - efficientnetv2-m_8xb32_in21k
+  shufflenet-v2:
+    path: ./configs/shufflenet_v2
+    model:
+      - shufflenet-v2-1x_16xb64_in1k
+  mobilenet_v3:
+    path: ./configs/mobilenet_v3
+    model:
+      - mobilenet-v3-small_8xb128_in1k
+  vision_transformer:
+    path: ./configs/vision_transformer
+    model:
+      - vit-base-p16_64xb64_in1k-384px
+  swin_v2:
+    path: ./configs/swin_transformer_v2
+    model:
+      - swinv2p1-base-w16_16xb64_in1k-256px
+  mobilevit:
+    path: ./configs/mobilevit
+    model:
+      - mobilevit-small_8xb128_in1k

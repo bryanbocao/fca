@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Few-Class Arena: A Benchmark for Efficient Selection of Vision Models and Dataset Difficulty Measurement"
+authors:
+  - name: "Few-Class Arena Contributors"
+version: 0.1.0
+date-released: 2025-03-01
+repository-code: "https://github.com/bryanbocao/fca"
+license: Apache-2.0

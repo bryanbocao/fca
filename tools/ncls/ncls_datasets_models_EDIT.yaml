@@ -1,0 +1,41 @@
+datasets:
+  - imagenet:
+      ncls: 1000
+  - caltech101:
+      ncls: 101
+  - caltech256:
+      ncls: 257
+  - cifar100:
+      ncls: 100
+  - cub200:
+      ncls: 200
+  - food101:
+      ncls: 101
+  - gtsrb43:
+      ncls: 43
+  - indoor67:
+      ncls: 67
+  - quickdraw345:
+      ncls: 345 
+  - textures47:
+      ncls: 47
+
+models:
+  resnet50_8xb32_in1k: ./configs/resnet/resnet50_8xb32_in1k_EDIT.py
+  vgg16_8xb32_in1k: ./configs/vgg/vgg16_8xb32_in1k_EDIT.py
+  convnext-base_32xb128_in1k: ./configs/convnext/convnext-base_32xb128_in1k_EDIT.py
+  convnext-v2-base_32xb32_in1k: ./configs/convnext_v2/convnext-v2-base_32xb32_in1k_EDIT.py
+  inception-v3_8xb32_in1k: ./configs/inception_v3/inception-v3_8xb32_in1k_EDIT.py
+  efficientnet-b3_8xb32_in1k: ./configs/efficientnet/efficientnet-b3_8xb32_in1k_EDIT.py
+  efficientnetv2-m_8xb32_in21k: ./configs/efficientnet_v2/efficientnetv2-m_8xb32_in21k_EDIT.py 
+  shufflenet-v1-1x_16xb64_in1k: ./configs/shufflenet_v1/shufflenet-v1-1x_16xb64_in1k_EDIT.py
+  shufflenet-v2-1x_16xb64_in1k: ./configs/shufflenet_v2/shufflenet-v2-1x_16xb64_in1k_EDIT.py
+  mobilenet-v3-small_8xb128_in1k: ./configs/mobilenet_v3/mobilenet-v3-small_8xb128_in1k_EDIT.py
+  vit-base-p16_64xb64_in1k-384px: ./configs/vision_transformer/vit-base-p16_64xb64_in1k-384px_EDIT.py
+  swin-base_16xb64_in1k: ./configs/swin_transformer/swin-base_16xb64_in1k_EDIT.py
+  swinv2-base-w16_16xb64_in1k-256px: ./configs/swin_transformer_v2/swinv2p1-base-w16_16xb64_in1k-256px_EDIT.py # ./configs/swin_transformer_v2/swinv2-base-w16_16xb64_in1k-256px_EDIT.py
+  efficientformer-l1_8xb128_in1k: ./configs/efficientformer/efficientformer-l1_8xb128_in1k_EDIT.py
+  mobilevit-small_8xb128_in1k: ./configs/mobilevit/mobilevit-small_8xb128_in1k_EDIT.py
+  conformer-base-p16_8xb128_in1k: ./configs/conformer/conformer-base-p16_8xb128_in1k_EDIT.py 
+  t2t-vit-t-14_8xb64_in1k: ./configs/t2t_vit/t2t-vit-t-14_8xb64_in1k_EDIT.py 
+  
